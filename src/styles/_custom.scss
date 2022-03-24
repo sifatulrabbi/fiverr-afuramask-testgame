@@ -20,6 +20,20 @@ $font-family-base: "Noto Sans JP", sans-serif;
 .cow-btn {
     cursor: pointer;
     @extend .transition;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend .m-2;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+
+    img {
+        width: 5rem;
+        height: auto;
+    }
 
     &:hover {
         transform: scale(1.1) translateX(-5%) rotate(-5deg);
