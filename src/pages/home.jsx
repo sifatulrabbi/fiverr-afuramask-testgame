@@ -1,16 +1,14 @@
 import React from "react";
-import {Container} from "react-bootstrap";
 
 export function Home() {
     return (
-        <Container className="bg-white">
-            <h1>Heading</h1>
-            <h3>Sub heading</h3>
-            <img src="" alt="Logo" />
-            <h3>Sub heading secondary</h3>
-            <button>
-                {">>"} Play {">>"}
-            </button>
-        </Container>
+        <div className="container container-sm d-flex flex-column justify-content-center align-items-center">
+            <h1 className="fs-1 fw-bolder">ゲーム説明</h1>
+            <h4 className="text-secondary text-center">
+                並んでる牛さんをクリックすると
+                <br />
+                点数がもらえるよ
+            </h4>
+        </div>
     );
 }
