@@ -1,0 +1,18 @@
+{
+    "tabWidth": 4,
+    "arrowParens": "always",
+    "jsxSingleQuote": false,
+    "bracketSpacing": false,
+    "printWidth": 80,
+    "semi": true,
+    "useTabs": false,
+    "trailingComma": "all",
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
