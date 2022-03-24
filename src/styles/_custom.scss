@@ -1,5 +1,27 @@
 $primary: #fa9900;
 $secondary: #666666;
+$font-family-base: "Noto Sans JP", sans-serif;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/variables.scss";
+
+.transition {
+    transition: all 250ms ease-out;
+}
+
+.game-btn {
+    &:hover {
+        span {
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.cow-btn {
+    cursor: pointer;
+    @extend .transition;
+
+    &:hover {
+        transform: scale(1.1) translateX(-5%) rotate(-5deg);
+    }
+}

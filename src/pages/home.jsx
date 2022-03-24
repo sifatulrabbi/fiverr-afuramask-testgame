@@ -13,13 +13,19 @@ export function Home() {
             <img
                 src={btn}
                 alt="Button"
-                className="py-3"
+                className="py-3 cow-btn"
                 style={{ height: "20vh" }}
             />
-            <button className="btn fs-5 text-center text-primary fw-bold">
+            <button className="btn fs-5 text-center text-primary fw-bold game-btn">
                 ゲーム開始
                 <br />
-                {">>"}スキップ{">>"}
+                <span className="transition" style={{ fontSize: "1.4rem" }}>
+                    {">>"}
+                </span>{" "}
+                スキップ{" "}
+                <span className="transition" style={{ fontSize: "1.4rem" }}>
+                    {">>"}
+                </span>
             </button>
         </div>
     );
