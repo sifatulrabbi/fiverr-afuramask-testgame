@@ -1,10 +1,20 @@
 import React from "react";
+import {Routes, Route} from "react-router-dom";
+import {Home} from "./pages";
 
 function App() {
     return (
-        <div>
-            <h1>Hello world</h1>
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+                path="/options/*"
+                element={
+                    <Routes>
+                        <Route path="" />
+                    </Routes>
+                }
+            />
+        </Routes>
     );
 }
 
