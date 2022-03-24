@@ -1,9 +1,0 @@
-*::after,
-*::before,
-* {
-    font-family: inherit;
-}
-
-body {
-    font-family: "Noto Sans JP", sans-serif;
-}
