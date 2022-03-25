@@ -27,7 +27,7 @@ export function Options() {
                 ))}
             </div>
             <h6 className="fw-bold mt-4 mb-3">
-                好きな牛さんを選んで
+                好きな牛さんを選んで{" "}
                 <span className="text-primary">クリック</span>
             </h6>
             <small className="text-secondary fw-bold">
