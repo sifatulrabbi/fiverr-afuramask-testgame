@@ -12,15 +12,15 @@ export function Home() {
     return (
         <div className="container-fluid p-0 my-auto bg-white w-100 py-5 d-flex flex-column justify-content-center align-items-center page">
             <GameTitle />
-            <h1 className="fs-1 fw-bolder text-primary">ゲーム説明</h1>
-            <p className="text-secondary text-center fw-bold">
+            <h1 className="fs-1 fw-bold text-primary">ゲーム説明</h1>
+            <p className="text-secondary fw-bold text-center">
                 並んでる牛さんをクリックすると
                 <br />
                 点数がもらえるよ
             </p>
             <CowBtn onClick={gotoOptions} />
             <button
-                className="btn fs-5 text-center text-primary fw-bold game-btn"
+                className="btn fs-5 text-center text-primary game-btn fw-bold"
                 onClick={gotoOptions}
             >
                 ゲーム開始

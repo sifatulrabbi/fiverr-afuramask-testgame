@@ -1,6 +1,18 @@
+@font-face {
+    font-family: "Meiryo";
+    src: url("../assets/meiryo.ttc") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Meiryo";
+    src: url("../assets/meiryob.ttc") format("truetype");
+    font-weight: bold;
+}
+
 $primary: #fa9900;
 $secondary: #666666;
-$font-family-base: "Noto Sans JP", sans-serif;
+$font-family-base: "Meiryo", sans-serif;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/variables.scss";
@@ -46,6 +58,25 @@ $font-family-base: "Noto Sans JP", sans-serif;
 .page {
     opacity: 0;
     animation: fade 0.8s ease-out forwards;
+
+    .btn-colored {
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        border-bottom: 3px solid $secondary;
+        width: 220px;
+        margin-top: 2rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: transparent;
+            transform: translateY(3px);
+        }
+    }
+}
+
+.shake {
+    animation: shake-anim 1s linear infinite;
 }
 
 @keyframes cow-btn-anim {
@@ -80,5 +111,23 @@ $font-family-base: "Noto Sans JP", sans-serif;
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes shake-anim {
+    0% {
+        transform: rotate(5deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
     }
 }
