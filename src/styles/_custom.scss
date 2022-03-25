@@ -1,18 +1,19 @@
-@font-face {
-    font-family: "Meiryo";
-    src: url("../assets/meiryo.ttc") format("truetype");
-    font-weight: normal;
-}
+// @font-face {
+//     font-family: "Meiryo";
+//     src: url("../assets/meiryo.ttc") format("truetype");
+//     font-weight: normal;
+// }
 
-@font-face {
-    font-family: "Meiryo";
-    src: url("../assets/meiryob.ttc") format("truetype");
-    font-weight: bold;
-}
+// @font-face {
+//     font-family: "Meiryo";
+//     src: url("../assets/meiryob.ttc") format("truetype");
+//     font-weight: bold;
+// }
 
 $primary: #fa9900;
 $secondary: #666666;
-$font-family-base: "Meiryo", sans-serif;
+// $font-family-base: "Meiryo", sans-serif;
+$font-family-base: "Noto Sans JP", sans-serif;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/variables.scss";
