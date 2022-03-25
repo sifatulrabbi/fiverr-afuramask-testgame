@@ -10,7 +10,7 @@ export function Home() {
     }
 
     return (
-        <div className="container-fluid p-0 my-auto bg-white w-100 py-5 d-flex flex-column justify-content-center align-items-center page">
+        <div className="page">
             <GameTitle />
             <h1 className="fs-1 fw-bold text-primary">ゲーム説明</h1>
             <p className="text-secondary fw-bold text-center">

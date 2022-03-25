@@ -58,6 +58,19 @@ $font-family-base: "Meiryo", sans-serif;
 .page {
     opacity: 0;
     animation: fade 0.8s ease-out forwards;
+    @extend .bg-white;
+    width: 100%;
+    padding: 1.5rem 0;
+    @extend .container-fluid;
+    @extend .p-0;
+    @extend .my-auto;
+    @extend .bg-white;
+    @extend .w-100;
+    @extend .py-5;
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-center;
+    @extend .align-items-center;
 
     .btn-colored {
         outline: none;

@@ -12,7 +12,7 @@ export function Result() {
     }
 
     return reward ? (
-        <div className="d-flex flex-column justify-content-center align-items-center page">
+        <div className="page">
             <GameTitle />
             <h1 className="fw-bold text-primary">あなたの得点は？</h1>
             <div

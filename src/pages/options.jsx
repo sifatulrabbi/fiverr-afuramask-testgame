@@ -16,7 +16,7 @@ export function Options() {
     }
 
     return (
-        <div className="container px-3 d-flex flex-column justify-content-center align-items-center page">
+        <div className="page">
             <GameTitle />
             <div
                 className="d-flex flex-wrap justify-content-center align-items-center"
