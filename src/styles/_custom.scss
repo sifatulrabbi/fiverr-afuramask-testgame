@@ -29,6 +29,7 @@ $font-family-base: "Noto Sans JP", sans-serif;
     outline: none;
     border: none;
     padding: 0;
+    animation: cow-btn-anim 1s ease infinite;
 
     img {
         width: 5rem;
@@ -36,6 +37,48 @@ $font-family-base: "Noto Sans JP", sans-serif;
     }
 
     &:hover {
-        transform: scale(1.1) translateX(-5%) rotate(-5deg);
+        img {
+            animation: cow-btn-jiggle 0.5s ease-in;
+        }
+    }
+}
+
+.page {
+    opacity: 0;
+    animation: fade 0.8s ease-out forwards;
+}
+
+@keyframes cow-btn-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cow-btn-jiggle {
+    0% {
+        transform: translateY(-10%);
+    }
+    80% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
